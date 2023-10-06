@@ -1,0 +1,5 @@
+select city from station where left(city, 1) in ('a', 'e', 'i', 'o', 'u');
+
+or 
+
+SELECT DISTINCT CITY FROM STATION WHERE (CITY LIKE 'A%' OR CITY LIKE 'E%' OR CITY LIKE 'I%' OR CITY LIKE 'O%' OR CITY LIKE 'U%') order by city; 
